@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/pictureTitle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/itemHeadingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Text 1"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:padding="2dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        app:layout_constraintStart_toEndOf="@+id/pictureTitle"
+        android:layout_marginLeft="105dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/subHeadingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub Heading 1"
+        android:padding="2dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        app:layout_constraintTop_toBottomOf="@id/itemHeadingText"
+        app:layout_constraintStart_toEndOf="@id/pictureTitle"
+        android:lastBaselineToBottomHeight="@dimen/material_emphasis_medium"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="4dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
